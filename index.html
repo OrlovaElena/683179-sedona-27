@@ -9,7 +9,7 @@
   <header>
     <nav>
       <a class="logo">
-        <img class ="" src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
+        <img class ="logo-sedona" src="img/logo.svg" width="140" height="71" alt="Логотип Седона">
       </a>
 
       <ul class="navigation-top">
@@ -23,7 +23,7 @@
 
   <main>
     <section class="welcome">
-      <h2 class="invisible-txt"> Добро пожаловать в Седону </h2>    
+      <h2 class="visually-hidden"> Добро пожаловать в Седону </h2>    
         <img class="main-txt-img" src="img/welcome.svg" width="459" height="353" alt="Welcome to Sedona">
     </section>
     <section class="intro">
@@ -37,7 +37,7 @@
     </section>
 
     <section class="benefit">
-      <h2 class="invisible-txt">Преимущества</h2>
+      <h2 class="visually-hidden">Наши преимущества</h2>
       
       <!--преимущества-->
     </section>
@@ -52,10 +52,23 @@
       </div>
     </section>
 
-    <div class="search-btn">
-      <h2 class="invisible-txt">Поиск</h2>
+    <fieldset class="search-btn">
+      <h2 class="visually-hidden">Поиск</h2>
       <button type="button" class="search-btn-title" aria-label="Открыть поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>
-    </div>
+      <label for="datestart-field">Дата заезда</label>
+      <input type="date" name="date" id="datestart -field">
+      <label for="dateend-field">Дата выезда</label>
+      <input type="date" name="date" id="dateend-field">
+      <label for="quantity-field big">Взрослые</label> 
+        <input type="button" value="-" id="button_minus">
+        <input type="button" value="+" id="button_plus">
+      <input type="quantity" stape="1" min="1" max="25" name="quantity" value="1" id="quantity-field big">
+      <label for="quantity-field small">Дети</label> 
+        <input type="button" value="-" id="button_minus">
+        <input type="button" value="+" id="button_plus">
+      <input type="quantity" stape="1" min="1" max="25" name="quantity" value="1" id="quantity-field small"> 
+      <input type="submit" class="btn" value="Найти">
+    </fieldset>
   </main>
 
   <footer>
